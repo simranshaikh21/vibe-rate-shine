@@ -1,4 +1,6 @@
-import { Star, Shield, CheckCircle } from "lucide-react";
+import { Star, Shield, CheckCircle, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 
 const Services = () => {
@@ -6,10 +8,7 @@ const Services = () => {
   return (
    
     <div className="min-h-screen pt-16">
-      <section className="container mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div> 
-             <Button 
+          <Button 
   variant="ghost" 
   onClick={() => navigate(-1)} 
   className="flex items-center gap-2 mb-6"
@@ -17,6 +16,9 @@ const Services = () => {
   <ArrowLeft className="w-4 h-4" />
   Back
 </Button>
+      <section className="container mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div>
             <h1 className="text-4xl md:text-5xl font-display leading-tight mb-8">
               <span className="text-foreground">A Culture of</span>
               <br />
