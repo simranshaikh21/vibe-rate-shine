@@ -4,7 +4,12 @@ import Footer from "@/components/Footer";
 const Services = () => {
   const navigate = useNavigate();
   return (
-    <Button 
+   
+    <div className="min-h-screen pt-16">
+      <section className="container mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div> 
+             <Button 
   variant="ghost" 
   onClick={() => navigate(-1)} 
   className="flex items-center gap-2 mb-6"
@@ -12,10 +17,6 @@ const Services = () => {
   <ArrowLeft className="w-4 h-4" />
   Back
 </Button>
-    <div className="min-h-screen pt-16">
-      <section className="container mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
             <h1 className="text-4xl md:text-5xl font-display leading-tight mb-8">
               <span className="text-foreground">A Culture of</span>
               <br />
