@@ -1,20 +1,24 @@
-import { Users, Target, Zap, Globe } from "lucide-react";
+import { Users, Target, Zap, Globe, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 
 const About = () => {
    const navigate = useNavigate();
   return (
     <div className="min-h-screen pt-16">
+       <div className="container mx-auto px-6 pt-4">
+        <Button 
+          variant="ghost" 
+          onClick={() => navigate(-1)} 
+          className="flex items-center gap-2 hover:bg-primary/10"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Back
+        </Button>
+      </div>
       <section className="container mx-auto px-6 py-20">
         <div className="max-w-3xl mx-auto text-center mb-16"> 
-          <Button 
-  variant="ghost" 
-  onClick={() => navigate(-1)} 
-  className="flex items-center gap-2 mb-6"
->
-  <ArrowLeft className="w-4 h-4" />
-  Back
-</Button>
           <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-6">
             <span className="text-foreground">About </span>
             <span className="gradient-text">RateIt</span>
