@@ -7,7 +7,7 @@ const Services = () => {
       <section className="container mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold leading-tight mb-8">
+            <h1 className="text-4xl md:text-5xl font-display leading-tight mb-8">
               <span className="text-foreground">A Culture of</span>
               <br />
               <span className="gradient-text">High-Performance.</span>
