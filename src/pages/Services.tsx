@@ -34,7 +34,7 @@ const Services = () => {
 
           {/* Animated Star Card */}
           <div className="flex justify-center">
-            <div className="glow-border rounded-2xl p-10 w-72 flex flex-col items-center gap-4 animate-float relative">
+            <div className="glow-border rounded-2xl p-10 w-72 flex flex-col items-center gap-4 animate-tilt animate-glow-pulse relative">
               <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary/20 text-primary text-[10px] font-medium animate-pulse-slow">
                 INTERNAL ENGINE V3.4
               </div>
